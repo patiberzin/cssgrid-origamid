@@ -1,0 +1,74 @@
+/*Estilos Gerais*/
+.item {
+    margin: 5px;
+    background: powderblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.grid {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 1.25em;
+    color:rgb(3, 109, 103);
+    font-weight: bold;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
+body > div {
+    padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+    background: rgb(248, 248, 227);
+}
+
+/*Grid Container*/
+.grid {
+    display: grid;
+}
+
+.grid-template-columns {
+    grid-template-columns: 200px 200px;
+    background: pink;
+}
+
+.grid-template-columns-3 {
+    grid-template-columns: 1fr 2fr 1fr;
+    background: pink;
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: pink;
+    grid-gap: 10px;
+}
+
+.subgrid > div {
+    background: plum;
+}
