@@ -56,22 +56,20 @@ body > div > img {
 /*Grid Container*/
 .grid {
     display: grid;
+    background: rgb(112, 0, 112);
 }
 
 .grid-template-columns {
     grid-template-columns: 200px 200px;
-    background: pink;
 }
 
 .grid-template-columns-3 {
     grid-template-columns: 1fr 2fr 1fr;
-    background: pink;
 }
 
 .subgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: pink;
     grid-gap: 10px;
 }
 
@@ -80,6 +78,13 @@ body > div > img {
 }
 
 /*grid-template-columns*/
+
+.grid-ex2 {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: lightpink;
+}
 
 /*100px é o valor total, ignora conteúdo, margem e etc. Respeita apenas o min-width do item*/
 .grid-template-columns-1 {
@@ -116,11 +121,14 @@ body > div > img {
     grid-template-columns: repeat(auto-fill, minmax(100px, auto));
 }
 
+
+
 /*grid-template-rows*/
 
 .grid-ex3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: rgb(248, 212, 198);
 }
 
 .grid-template-rows-1 {
@@ -141,6 +149,13 @@ body > div > img {
 }
 
 /*grid-template-areas*/
+
+.grid-ex4 {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: red;
+}
 
 .logo {
     grid-area: logo;
@@ -174,12 +189,24 @@ body > div > img {
     ;
 }
 
-.grid-template-areas-2 {
+.grid-template-areas-2 { /*essa organização das áreas, será exibida conforme o posicionamento no CSS veja:*/
     grid-template-areas:
     "slidenav logo nav"
     "slidenav content advert"
     "slidenav content footer"
     ;
+}
+
+@media (max-width: 500px) { /*fará uma organização diferente quando diminuir a tela (responsivo)*/
+    .grid-template-areas-2 {
+        grid-template-areas:
+        "logo logo logo"
+        "sidenav sidenav sidenav"
+        "nav nav nav"
+        "content content content"
+        "advert footer footer"
+        ;
+    }
 }
 
 .grid-template-areas-3 {
@@ -197,8 +224,8 @@ body > div > img {
     grid-template-rows: 50px 150px 50px;
     grid-template-areas:
     "logo nav nav"
-    "slidenav content advert"
-    "slidenav footer footer"
+    "sidenav content advert"
+    "sidenav footer footer"
     ;
 }
 
