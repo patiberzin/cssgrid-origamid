@@ -83,7 +83,7 @@ body > div > img {
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #ccc;
-    background: lightpink;
+    background: rgb(250, 139, 156);
 }
 
 /*100px é o valor total, ignora conteúdo, margem e etc. Respeita apenas o min-width do item*/
@@ -128,7 +128,7 @@ body > div > img {
 .grid-ex3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: rgb(248, 212, 198);
+    background: rgb(68, 128, 71);
 }
 
 .grid-template-rows-1 {
@@ -151,10 +151,11 @@ body > div > img {
 /*grid-template-areas*/
 
 .grid-ex4 {
+    display: grid;
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #ccc;
-    background: red;
+    background: rgb(98, 2, 2);
 }
 
 .logo {
@@ -238,3 +239,48 @@ body > div > img {
 }
 
 /*grid-template*/
+
+.grid-ex5 {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(3, 3, 82);
+}
+
+.grid-template-1 {
+    grid-template: 50px 1fr / 100px 1fr 100px;
+}
+
+.grid-template-2 {
+    grid-template:
+    "logo nav nav" 50px /*primeira linha com 50px*/
+    "sidenav content advert" 150px /*segunda linha com 150px*/
+    "sidenav footer footer" 100px /*terceira linha com 100px*/
+    / 100px 1fr 50px;
+    /*A primeira coluna com 100px, a segunda 1fr e a terceira com 50px.*/
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.advert {
+    grid-area: advert;
+}
+
+.footer {
+    grid-area: footer;
+}
