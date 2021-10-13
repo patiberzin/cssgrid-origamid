@@ -25,6 +25,12 @@ h2 {
     text-decoration: underline;
 }
 
+h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
 p {
     text-align: center;
     font-size: 1.25em;
@@ -51,6 +57,11 @@ body > div > img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 /*GRID CONTAINER*/
@@ -619,19 +630,69 @@ body > div > img {
 
 /*justify-items*/
 
+.grid-ex13 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(0, 161, 140);
+}
+
+.start-3 {
+    justify-items: start;
+}
+
+.end-3 {
+    justify-items: end;
+}
+
+.center-3 {
+    justify-items: center;
+}
+
+.stretch-3 {
+    justify-items: stretch;
+}
+
+.item-2-dois, .item-3-tres {
+    grid-row: span 2;
+}
+
+.item-5-cinco {
+    grid-column: span 2;
+}
+
 /*align-items*/
 
+.grid-ex14 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(0, 161, 140);
+}
+
+.start-4 {
+    align-items: start;
+}
+
+.end-4 {
+    align-items: end;
+}
+
+.center-4 {
+    align-items: center;
+}
+
+.stretch-4 {
+    align-items: stretch;
+}
 
 /* FIM DO GRID CONTAINER */
 
-/* GRID ITEM */
-
-/*grid-column*/
-
-/*grid-row*/
-
-/*grid-area*/
-
-/*justify-self*/
-
-/*align-self*/
