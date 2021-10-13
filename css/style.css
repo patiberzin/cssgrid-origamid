@@ -53,7 +53,10 @@ body > div > img {
     max-width: 100%;
 }
 
-/*Grid Container*/
+/*GRID CONTAINER*/
+
+/* display */
+
 .grid {
     display: grid;
     background: rgb(112, 0, 112);
@@ -305,7 +308,8 @@ body > div > img {
 
 .gap {
     gap: 20px;
-}
+} 
+
 
 .column-gap {
     gap: 2px;
@@ -349,21 +353,278 @@ body > div > img {
 
 /*grid-auto-columns*/
 
+.grid-ex7 {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(175, 82, 129);
+}
 
+.grid-auto-columns-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 100px;
+}
+
+/* Ele força a criação de 5 colunas */
+
+.item-6 {
+    grid-column: 5;
+}
+
+.grid-auto-columns-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 50px 100px;
+}
+
+.grid-auto-columns-2 > .item-6 {
+    grid-column: 6;
+}
+
+.grid-auto-columns-3 {
+    grid-template-columns: 1fr 1fr;
+}
 
 /*grid-auto-rows*/
 
+.grid-ex8 {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(240, 203, 215);
+}
+
+.grid-auto-rows-1 {
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 100px;
+}
+
+.grid-auto-rows-2 {
+    grid-template:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+    grid-auto-rows: 50px 100px;
+}
+
+.logo-2 {
+    grid-area: logo;
+}
+
+.nav-2 {
+    grid-area: nav;
+}
+
+.content-2 {
+    grid-area: content;
+}
+
+.sidenav-2 {
+    grid-area: sidenav;
+}
+
+.advert-2 {
+    grid-area: advert;
+}
+
+.footer-2 {
+    grid-area: footer;
+}
+
 /*grid-auto-flow*/
+
+.grid-ex9 {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: peru;
+}
+
+.grid-auto-flow-1 {
+    grid-auto-flow: column;
+}
+
+.grid-auto-flow-2 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: 50px 50px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+}
+
+.grid-auto-rows-2-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.item-2 {
+    grid-column: span 3;
+}
+
+.item-4 {
+    grid-column: span 3;
+}
 
 /*grid*/
 
+.grid-ex10 {
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(197, 90, 18);
+}
+
+.grid-1 {
+    grid: 100px / 1fr 1fr;
+}
+
+.grid-2 {
+    grid: 100px / auto-flow 100px 50px;
+}
+
+.grid-3 {
+    grid:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+}
+
+.logo-3 {
+    grid-area: logo;
+}
+
+.nav-3 {
+    grid-area: nav;
+}
+
+.content-3 {
+    grid-area: content;
+}
+
+.sidenav-3 {
+    grid-area: sidenav;
+}
+
+.advert-3 {
+    grid-area: advert;
+}
+
+.footer-3 {
+    grid-area: footer;
+}
+
+
 /*justify-content*/
 
+.grid-ex11 {
+    display: grid;
+    max-width: 400px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px 100px 100px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(96, 18, 197);
+}
+
+.start {
+    justify-content: start;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.stretch {
+    grid-template-columns: auto;
+    justify-content: stretch;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.item-dois, .item-tres {
+    grid-row: span 2;
+}
+
+.item-cinco {
+    grid-column: span 2;
+}
+
 /*align-content*/
+
+.grid-ex12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: rgb(153, 6, 6);
+}
+
+.start-2 {
+    align-content: start;
+}
+
+.end-2 {
+    align-content: start;
+}
+
+.center-2 {
+    align-content: center;
+}
+
+.stretch-2 {
+    grid-template-columns: auto;
+    align-content: stretch;
+}
+
+.space-around-2 {
+    align-content: space-around;
+}
+
+.space-between-2 {
+    align-content: space-between;
+}
+
+.space-evenly-2 {
+    align-content: space-evenly;
+}
+
+.item-dois-2, .item-tres-3 {
+    grid-row: span 2;
+}
+
+.item-cinco-5 {
+    grid-column: span 2;
+}
 
 /*justify-items*/
 
 /*align-items*/
+
+
+/* FIM DO GRID CONTAINER */
+
+/* GRID ITEM */
 
 /*grid-column*/
 

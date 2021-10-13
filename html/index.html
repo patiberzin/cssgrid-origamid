@@ -368,8 +368,10 @@
             <div class="item sidenav">sidenav</div>
             <div class="item advert">advert</div>
             <div class="item footer">footer</div>
-        </section>
-    </div>
+        </section> 
+    </div> 
+
+    
 
     <div>
         <h1>margem nos itens</h1>
@@ -419,6 +421,291 @@
             <div class="item">4</div>
             <div class="item">5</div>
             <div class="item item-6">6</div>
+        </section>
+    </div>
+
+    <h2>grid-auto-rows</h2>
+    <p>Define o tamanho das linhas do grid implícito (gerado automaticamente, quando algum elemento é posicionado em ua linha que não foi definida).</p>
+
+    <div>
+        <h1>grid-auto-rows: 100px;</h1>
+        <section class="grid-ex8 grid-auto-rows-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-auto-rows: 50px 100px;</h1>
+        <section class="grid-ex8 grid-auto-rows-2">
+            <div class="item logo-2">logo</div>
+            <div class="item nav-2">nav</div>
+            <div class="item content-2">content</div>
+            <div class="item sidenav-2">sidenav</div>
+            <div class="item advert-2">advert</div>
+            <div class="item footer-2">footer</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+        </section>
+    </div>
+
+    <h2>grid-auto-flow</h2>
+    <p>Define o fluxo dos itens no grid. Se eles vão automaticamente gerar novas linhas ou colunas.</p>
+
+    <div>
+        <h1>grid-auto-flow: column;</h1>
+        <section class="grid-ex9 grid-auto-flow-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-auto-flow: column;</h1>
+        <section class="grid-ex9 grid-auto-flow-2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-auto-flow: dense;</h1>
+        <section class="grid-ex9 grid-auto-rows-2-2">
+            <div class="item">1</div>
+            <div class="item item-2">2</div>
+            <div class="item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+        </section>
+    </div>
+
+    <h2>grid</h2>
+    <p>Atalho geral para definir o grid: grid-template-rows, grid-template-columns-grid-template-areas, grid-auto-rows, grid-auto-columns e grid-auto-flow</p>
+
+    <div>
+        <h1>grid: 100px / 1fr 1fr;</h1>
+        <section class="grid-ex10 grid-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid: 100px / auto-flow 100px 50px;</h1>
+        <section class="grid-ex10 grid-2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid diversos valores</h1>
+        <section class="grid-ex10 grid-3">
+            <div class="item logo-3">logo</div>
+            <div class="item nav-3">nav</div>
+            <div class="item content-3">content</div>
+            <div class="item sidenav-3">sidenav</div>
+            <div class="item advert-3">advert</div>
+            <div class="item footer-3">footer</div>
+        </section>
+    </div>
+
+    <h2>justify-content</h2>
+    <p>Justifica os itens do grid em relação ao eixo x (horizontal)</p>
+
+    <div>
+        <h1>justify-content: start;</h1>
+        <section class="grid-ex11 start">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: end;</h1>
+        <section class="grid-ex11 end">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: center;</h1>
+        <section class="grid-ex11 center">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: stretch;</h1>
+        <section class="grid-ex11 stretch">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: space-around;</h1>
+        <section class="grid-ex11 space-around">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: space-between;</h1>
+        <section class="grid-ex11 space-between">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>justify-content: space evenly;</h1>
+        <section class="grid-ex11 space-evenly">
+            <div class="item">1</div>
+            <div class="item item-dois">2</div>
+            <div class="item item-tres">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <h2>align-content</h2>
+    <p>Alinha os itens do grid em relação ao eixo y (vertical)</p>
+
+    <div>
+        <h1>align-content: start;</h1>
+        <section class="grid-ex12 start-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: end;</h1>
+        <section class="grid-ex12 end-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: center;</h1>
+        <section class="grid-ex12 center-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: stretch;</h1>
+        <section class="grid-ex12 stretch-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: space-around;</h1>
+        <section class="grid-ex12 space-around-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: space-between;</h1>
+        <section class="grid-ex12 space-between-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>align-content: space-evenly;</h1>
+        <section class="grid-ex12 space-evenly-2">
+            <div class="item">1</div>
+            <div class="item item-dois-2">2</div>
+            <div class="item item-tres-3">3</div>
+            <div class="item">4</div>
+            <div class="item item-cinco-5">5</div>
+            <div class="item">6</div>
         </section>
     </div>
 </body>
